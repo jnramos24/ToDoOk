@@ -1,4 +1,4 @@
-# Android Application - ISPC 2023
+# Android Application - ISPC 2023 📱
 
 Project for the I.S.P.C mobile applications module
 
