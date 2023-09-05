@@ -13,9 +13,9 @@ JAVA  -  Android Studio
 ## Wiki 📖
 en nuestra [Wiki] () puede consultar:
 
-Meeting realizadas : 
+Meeting realizadas : https://github.com/jnramos24/Ispc_Project/wiki/Reuniones
 
-Detalle de Proyecto a realizar: 
+Detalle de Proyecto a realizar: https://github.com/jnramos24/Ispc_Project/wiki/Sprint-Proyecto-Final
 
 ## Autores ✒️
 Estudiantes TSDWAD de ISPC
