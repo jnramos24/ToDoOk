@@ -15,7 +15,7 @@ en nuestra [Wiki] () puede consultar:
 
 Meeting realizadas : https://github.com/jnramos24/Ispc_Project/wiki/Reuniones
 
-Detalle de Proyecto a realizar: https://github.com/jnramos24/Ispc_Project/wiki/Sprint-Proyecto-Final
+Detalle de Proyecto a realizar: https://github.com/jnramos24/Ispc_Project/wiki/Sprints----Proyecto-Final
 
 ## Autores ✒️
 Estudiantes TSDWAD de ISPC
