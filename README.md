@@ -3,7 +3,7 @@
 Project for the I.S.P.C mobile applications module
 
 
-# -----To DO en ORDEN-----
+# -----TO DO en ORDEN-----
 (Proyecto Integrador - ISPC)
 
 
