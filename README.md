@@ -20,7 +20,7 @@ Detalle de Proyecto a realizar:
 ## Autores ✒️
 Estudiantes TSDWAD de ISPC
 
-Puede ver miembros de equipo en : 
+Puede ver miembros de equipo en : https://github.com/jnramos24/Ispc_Project/wiki/Miembros-de-Equipo
 
 -----------------------------------------------------------------------------------
 
