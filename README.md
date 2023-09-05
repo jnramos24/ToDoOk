@@ -11,7 +11,7 @@ Project for the I.S.P.C mobile applications module
 JAVA  -  Android Studio
 
 ## Wiki 📖
-en nuestra [Wiki] () puede consultar:
+en nuestra [Wiki] (https://github.com/jnramos24/ToDoEnOrden_Project/wiki) puede consultar:
 
 Meeting realizadas : https://github.com/jnramos24/Ispc_Project/wiki/Reuniones
 
