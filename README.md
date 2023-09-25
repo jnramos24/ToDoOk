@@ -27,3 +27,4 @@ Puede ver miembros de equipo en : https://github.com/jnramos24/Ispc_Project/wiki
 
 #Link to the previous project
 https://github.com/DaniBarrios22/Proyecto_Grupal-Ispc
+
