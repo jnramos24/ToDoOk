@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">ToDoOkApp</string>
+    <string name="todook">ToDoOk</string>
+    <string name="btnadd_img">Menu options</string>
+    <string name="tasks_message">Sin tareas</string>
 </resources>
