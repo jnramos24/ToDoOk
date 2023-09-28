@@ -12,4 +12,6 @@
     <string name="tarea_3">Tarea 3</string>
     <string name="date_3">29/09/2023</string>
     <string name="time_3">08:00</string>
+    <string name="Contact">Contact</string>
+    <string name="CampoContact">¿Preguntas? ¿Necesitas Ayuda?\n\nEscríbenos a\n\nemail@email.com\n\ny te responderemos!\n\n</string>
 </resources>
