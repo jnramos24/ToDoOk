@@ -3,4 +3,13 @@
     <string name="todook">ToDoOk</string>
     <string name="btnadd_img">Menu options</string>
     <string name="tasks_message">Sin tareas</string>
+    <string name="tarea_1">Tarea 1</string>
+    <string name="date_1">02/10/2023</string>
+    <string name="time_1">09:00</string>
+    <string name="tarea_2">Tarea 2</string>
+    <string name="date_2">25/12/2023</string>
+    <string name="time_2">23:59</string>
+    <string name="tarea_3">Tarea 3</string>
+    <string name="date_3">29/09/2023</string>
+    <string name="time_3">08:00</string>
 </resources>
