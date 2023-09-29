@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ToDoOkApp</string>
+
+
+    ---Perfil---
+    <string name="MiPerfil">Mi Perfil</string>
+    <string name="NombresDato">Nombre</string>
+    <string name="ApellidoDato">Apellido</string>
+    <string name="EmailDato">Email</string>
+    <string name="DirecciónDato">Dirección</string>
+    <string name="TeléfonoDato">Teléfono</string>
+    <string name="Actualizar">Actualizar Datos</string>
 </resources>
