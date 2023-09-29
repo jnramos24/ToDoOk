@@ -37,4 +37,16 @@
     <string name="Contact">Contact</string>
     <string name="CampoContact">¿Preguntas? ¿Necesitas Ayuda?\n\nEscríbenos a\n\nemail@email.com\n\ny te responderemos!\n\n</string>
 
+
+    <!--String Login-->
+
+    <string name="login">Login</string>
+    <string name="comentario">Inicia sesión con tu cuenta ToDoOk :</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="recuperar_contraseña">¿Olvidaste tu contraseña? Click Aqui</string>
+    <string name="registrarse">¿No tenes cuenta?   Registrate</string>
+
+
+
+
 </resources>
