@@ -3,7 +3,7 @@
 Project for the I.S.P.C mobile applications module
 
 
-# -----TO DO OK-----
+# -----ToDoOk-----
 (Proyecto Integrador - ISPC)
 
 
