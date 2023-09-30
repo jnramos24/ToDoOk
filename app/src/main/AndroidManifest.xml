@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ToDoOkApp"
         tools:targetApi="31">
         <activity
+            android:name=".SetPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

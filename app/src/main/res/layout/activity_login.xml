@@ -29,7 +29,7 @@
         android:layout_marginTop="28dp"
         android:text="@string/comentario"
         android:textColor="@color/white"
-        android:textSize="14spsp"
+        android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.23"
