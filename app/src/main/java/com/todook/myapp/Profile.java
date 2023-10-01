@@ -1,30 +1,28 @@
 package com.todook.myapp;
 
-import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class ContactActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Profile extends AppCompatActivity {
 
     ImageView imgback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact);
+        setContentView(R.layout.activity_profile);
 
-        imgback = findViewById(R.id.img_back_c);
+        imgback = findViewById(R.id.icon_volver_R);
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ContactActivity.this, MainActivity.class);
+                Intent intent = new Intent(Profile.this, MainActivity.class);
                 startActivity(intent);
             }
         });
-
     }
 }
