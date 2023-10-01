@@ -45,6 +45,7 @@
     <string name="iniciar_sesion">Iniciar sesión</string>
     <string name="recuperar_contraseña">¿Olvidaste tu contraseña? Click Aqui</string>
     <string name="registrarse">¿No tenes cuenta?   Registrate</string>
+    <string name="contacto">Contacto</string>
 
 
 </resources>
