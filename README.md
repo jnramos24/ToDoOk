@@ -11,11 +11,15 @@ Project for the I.S.P.C mobile applications module
 JAVA  -  Android Studio
 
 ## Wiki 📖
-en nuestra [Wiki] (https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
+En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
 
-Meeting realizadas : https://github.com/jnramos24/Ispc_Project/wiki/Reuniones
+ - [Descripción del Proyecto](https://github.com/jnramos24/ToDoOk/wiki#descripci%C3%B3n-del-proyecto)
 
-Detalle de Proyecto a realizar: https://github.com/jnramos24/Ispc_Project/wiki/Sprints----Proyecto-Final
+ - [Detalle de Proyecto a realizar](https://github.com/jnramos24/Ispc_Project/wiki/Sprints----Proyecto-Final)
+
+ - [Diseño en Figma App ToDoOk ](https://www.figma.com/file/RoGpldi4F5mQyHkUdaHPF5/ToDoOkAPP?type=design&node-id=0-1&mode=design)
+
+ - [Meeting realizadas](https://github.com/jnramos24/ToDoOk/wiki/Meetings-‐-Reuniones)
 
 ## Autores ✒️
 Estudiantes TSDWAD de ISPC
