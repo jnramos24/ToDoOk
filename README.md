@@ -1,10 +1,5 @@
-# 📱 Android Application - ISPC 2023 
-
-Project for the I.S.P.C mobile applications module
-
-
-# -----ToDoOk-----
-(Proyecto Integrador - ISPC)
+# 📱 ToDoOk Android Application - Proyecto Integrador - ISPC 2023 
+Nuestro proyecto consiste en desarrollar una aplicación móvil que tiene como objetivo simplificar la organización y gestión de las actividades diarias de los usuarios. Algunas de sus principales características incluyen la creación de cuentas de usuario para garantizar la seguridad de la información, la capacidad de crear tareas con detalles como título, descripción y fechas de vencimiento, y la posibilidad de priorizar estas tareas según su importancia. Además, la aplicación permitirá configurar recordatorios y notificaciones para asegurarse de que los usuarios estén al tanto de sus tareas pendientes.
 
 
 ## Construido con 🛠️
@@ -25,7 +20,7 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
  
  - [Miembros de equipo](https://github.com/jnramos24/Ispc_Project/wiki/Miembros-de-Equipo)
  
- - [Indormación del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior) 
+ - [Información del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior) 
 
 
 
