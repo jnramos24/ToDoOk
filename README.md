@@ -22,15 +22,12 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
  - [Testing](https://github.com/jnramos24/ToDoOk/wiki/Testing)
 
  - [Meeting realizadas](https://github.com/jnramos24/ToDoOk/wiki/Meetings-‐-Reuniones)
-
-## Autores ✒️
-Estudiantes TSDWAD de ISPC
-
-Puede ver miembros de equipo en : https://github.com/jnramos24/Ispc_Project/wiki/Miembros-de-Equipo
-
------------------------------------------------------------------------------------
+ 
+ - [Miembros de equipo](https://github.com/jnramos24/Ispc_Project/wiki/Miembros-de-Equipo)
+ 
+ - [Indormación del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior) 
 
 
-#Link to the previous project
-https://github.com/DaniBarrios22/Proyecto_Grupal-Ispc
+
+
 
