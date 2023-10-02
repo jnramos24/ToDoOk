@@ -53,7 +53,9 @@
 =======
 
     <string name="contacto">Contacto</string>
->>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
+    <string name="back_dashboard">Retroceder al dashboard</string>
+    <string name="new_task">Mi Perfil</string>
+    >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
 </resources>

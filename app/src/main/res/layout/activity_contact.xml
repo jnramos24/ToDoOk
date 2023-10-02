@@ -23,7 +23,7 @@
             android:layout_height="30dp"
             app:layout_constraintEnd_toStartOf="@+id/appTitle"
             app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="?attr/homeAsUpIndicator"
+            android:src="@drawable/baseline_arrow_back_24"
             tools:layout_editor_absoluteY="20dp" />
 
         <TextView
