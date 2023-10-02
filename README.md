@@ -1,4 +1,4 @@
-# 📱 ToDoOk Android Application - Proyecto Integrador - ISPC 2023 
+# 📱 ToDoOk Android App - Proyecto Integrador - ISPC 2023 
 Nuestro proyecto consiste en desarrollar una aplicación móvil que tiene como objetivo simplificar la organización y gestión de las actividades diarias de los usuarios. Algunas de sus principales características incluyen la creación de cuentas de usuario para garantizar la seguridad de la información, la capacidad de crear tareas con detalles como título, descripción y fechas de vencimiento, y la posibilidad de priorizar estas tareas según su importancia. Además, la aplicación permitirá configurar recordatorios y notificaciones para asegurarse de que los usuarios estén al tanto de sus tareas pendientes.
 
 
