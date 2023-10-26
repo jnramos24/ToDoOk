@@ -3,6 +3,7 @@ package com.todook.myapp;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -15,11 +16,15 @@ import androidx.activity.result.contract.ActivityResultContract;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.File;
+import java.io.IOException;
+
 public class Profile extends AppCompatActivity {
 
     ImageView imgback;
     Button btn_camera;
     ImageView imgfoto;
+    String rutaImagen;
 
 
     @Override
@@ -29,6 +34,7 @@ public class Profile extends AppCompatActivity {
 
         btn_camera = findViewById(R.id.btn_camara);
         imgfoto = findViewById(R.id.imgfoto);
+
 
         btn_camera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +67,16 @@ public class Profile extends AppCompatActivity {
         }
 
     });
+
+    private File crearImagen() throws IOException {
+        String nombreImagen = "foto_";
+        File directorio = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File imagen = File.createTempFile(nombreImagen, ".jpj", directorio);
+
+        rutaImagen = imagen.getAbsolutePath();
+        return imagen;
+
+    }
 
 
 }
