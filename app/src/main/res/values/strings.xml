@@ -20,6 +20,7 @@
     <string name="DirecciónDato">Dirección</string>
     <string name="TeléfonoDato">Teléfono</string>
     <string name="Actualizar">Actualizar Datos</string>
+    <string name="btn_camara">Cargar Imagen</string>
 
 
     <string name="todook">ToDoOk</string>
@@ -55,6 +56,8 @@
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
+    <string name="Imagen" />
+    <string name="image" />
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
