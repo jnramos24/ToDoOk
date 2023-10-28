@@ -8,18 +8,17 @@
     <string name="text_hint_pass">Contraseña</string>
     <string name="btn_text_crear">Crear cuenta</string>
     <string name="text_iniciar_sesion">¿Ya tienes cuenta? Iniciar sesión.</string>
-
     <string name="app_name">ToDoOkApp</string>
 
 
     <!--Perfil-->
     <string name="MiPerfil">Mi Perfil</string>
     <string name="NombresDato">Nombre</string>
-    <string name="ApellidoDato">Apellido</string>
     <string name="EmailDato">Email</string>
-    <string name="DirecciónDato">Dirección</string>
-    <string name="TeléfonoDato">Teléfono</string>
-    <string name="Actualizar">Actualizar Datos</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="btnActualizar">Actualizar Datos</string>
+    <string name="btncamara">Cargar Imagen</string>
+
 
 
     <string name="todook">ToDoOk</string>
@@ -55,6 +54,7 @@
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
+    <string name="Foto" />
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
