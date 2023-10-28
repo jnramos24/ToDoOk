@@ -12,11 +12,12 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -26,37 +27,44 @@
         android:layout_marginBottom="480dp"
         android:text="@string/login"
         android:textColor="@color/white"
-        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.094"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+        app:layout_constraintVertical_bias="0.0"
+        style="@style/TextAppearance.ToDoOkApp.Title"
+        />
 
     <EditText
         android:id="@+id/editTextUsername_L"
+        style="@style/TextAppearance.ToDoOkApp.Subtitle"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="164dp"
         android:hint="@string/text_hint_email"
         android:textColor="@color/white"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textLogin" />
+        app:layout_constraintTop_toTopOf="@+id/textLogin"
+
+        />
 
     <EditText
         android:id="@+id/editTextPassword_L"
+        style="@style/TextAppearance.ToDoOkApp.Subtitle"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="64dp"
         android:hint="@string/text_hint_pass"
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/editTextUsername_L" />
 
@@ -73,6 +81,7 @@
 
     <TextView
         android:id="@+id/textView6"
+        style="@style/TextAppearance.ToDoOkApp.normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
@@ -81,10 +90,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buttonLogin" />
+        app:layout_constraintTop_toTopOf="@+id/buttonLogin"
+
+        />
 
     <TextView
         android:id="@+id/textView5"
+        style="@style/TextAppearance.ToDoOkApp.normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
@@ -100,13 +112,13 @@
         android:layout_height="wrap_content"
         android:text="@string/comentario"
         android:textColor="@color/white"
-        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextUsername_L"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textLogin"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.534"
+        style="@style/TextAppearance.ToDoOkApp.Subtitle"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
