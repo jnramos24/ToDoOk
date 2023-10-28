@@ -16,8 +16,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ToDoOkApp"
+        android:theme="@style/Base.Theme.ToDoOkApp"
         tools:targetApi="31">
+
         <activity
             android:name=".SetPasswordActivity"
             android:exported="false" />
