@@ -28,18 +28,19 @@
 
         <TextView
             android:id="@+id/appTitle"
+            style="@style/TextAppearance.ToDoOkApp.Title"
             android:layout_width="170dp"
             android:layout_height="30dp"
             android:layout_gravity="start"
             android:layout_marginTop="24dp"
-            android:text="@string/Contact"
+            android:text="@string/contacto"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/toolbar"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat" />
 
 
     </androidx.appcompat.widget.Toolbar>
@@ -50,6 +51,7 @@
 
     <TextView
         android:id="@+id/title1"
+        style="@style/TextAppearance.ToDoOkApp.Subtitle"
         android:layout_width="381dp"
         android:layout_height="338dp"
         android:layout_marginStart="16dp"
@@ -62,7 +64,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
