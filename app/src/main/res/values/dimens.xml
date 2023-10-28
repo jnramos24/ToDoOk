@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <dimen name="android_textSizeTitle">21sp</dimen>
+    <dimen name="android_textSizeSubtitle">18sp</dimen>
+    <dimen name="android_textSizeNormal">15sp</dimen>
+
+
+
 </resources>
