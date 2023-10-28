@@ -54,7 +54,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         taskViewHolder.date1.setText(task.getTaskdate());
         taskViewHolder.time1.setText(task.getTimedate());
         taskViewHolder.title1.setText(task.getTaskname());
-        
+
     }
 
     @Override
