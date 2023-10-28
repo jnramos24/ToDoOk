@@ -17,6 +17,7 @@
     <string name="EmailDato">Email</string>
     <string name="Contraseña">Contraseña</string>
     <string name="btnActualizar">Actualizar Datos</string>
+    <string name="btncamara">Cargar Imagen</string>
 
 
 
@@ -53,6 +54,7 @@
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
+    <string name="Foto" />
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
