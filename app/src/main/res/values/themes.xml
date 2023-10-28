@@ -5,5 +5,19 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
-    <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp" />
+    <!-- Estilo para el título -->
+    <style name="TextAppearance.ToDoOkApp.Title" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/android_textSizeTitle</item>
+    </style>
+
+    <!-- Estilo para el subtítulo -->
+    <style name="TextAppearance.ToDoOkApp.Subtitle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/android_textSizeSubtitle</item>
+    </style>
+
+    <!-- Estilo para el texto normal  -->
+    <style name="TextAppearance.ToDoOkApp.normal" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/android_textSizeNormal</item>
+    </style>
+
 </resources>
