@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mPerfil"
+        android:title="@string/menu_perfil"
+        android:orderInCategory="100"
+        >
+    </item>
+    <item
+        android:id="@+id/mContacto"
+        android:title="@string/menu_contacto"
+        android:orderInCategory="101"
+        >
+    </item>
 
 </menu>
