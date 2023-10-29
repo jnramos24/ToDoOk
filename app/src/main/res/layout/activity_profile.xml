@@ -33,10 +33,10 @@
             android:layout_height="wrap_content"
             android:text="@string/new_task"
             android:textColor="@android:color/white"
-            android:textSize="20sp"
             android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/TextAppearance.ToDoOkApp.Title"/>
 
 
 
@@ -91,7 +91,7 @@
         android:layout_height="52dp"
         android:layout_marginBottom="72dp"
         android:text="@string/btnActualizar"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +103,7 @@
         android:layout_height="54dp"
         android:layout_marginTop="32dp"
         android:text="@string/btncamara"
-        android:textSize="20sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgfoto" />
@@ -115,7 +115,9 @@
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:contentDescription="@string/imagen" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
