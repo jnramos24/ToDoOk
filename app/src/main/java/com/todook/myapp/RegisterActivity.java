@@ -42,19 +42,27 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.buttonRegister_R);
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              DbUsers dbUsers = new DbUsers(RegisterActivity.this);
-              long id = dbUsers.insertUser(txtName.getText().toString(), txtEmail.getText().toString(), txtPassword.getText().toString());
-              
-              if(id > 0){
-                  Toast.makeText(RegisterActivity.this, "REGISTRO GUARDADO", Toast.LENGTH_SHORT).show();
-                  limpiar();
-              } else {
-                  Toast.makeText(RegisterActivity.this, "ERROR AL GUARDAR", Toast.LENGTH_SHORT).show();
-              }
-          }
-      } );
+            @Override
+            public void onClick(View view) {
+                String name = txtName.getText().toString();
+                String email = txtEmail.getText().toString();
+                String password = txtPassword.getText().toString();
+
+                if (isValidEmail(email) && isValidPassword(password)) {
+                    DbUsers dbUsers = new DbUsers(RegisterActivity.this);
+                    long id = dbUsers.insertUser(name, email, password);
+
+                    if (id > 0) {
+                        Toast.makeText(RegisterActivity.this, "REGISTRO GUARDADO", Toast.LENGTH_SHORT).show();
+                        limpiar();
+                    } else {
+                        Toast.makeText(RegisterActivity.this, "ERROR AL GUARDAR", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(RegisterActivity.this, "Por favor, ingresa datos válidos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         TextView linkLogin= findViewById(R.id.textIniciarSesion_R);
         linkLogin.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +72,6 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
     private void limpiar(){
         txtName.setText("");
@@ -78,8 +85,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private boolean isValidPassword(String password) {
-        // La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número
-        String passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
+        // La contraseña debe tener al menos 6 caracteres, al menos una letra, al menos un dígito.
+        String passwordRegex = "^(?=.*[a-zA-Z])(?=.*\\d)[a-zA-Z\\d]{6,}$";
         return password.matches(passwordRegex);
     }
+
+
 }
