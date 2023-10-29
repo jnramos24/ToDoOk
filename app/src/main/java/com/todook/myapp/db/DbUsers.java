@@ -16,7 +16,7 @@ public class DbUsers extends DbHelper {
         this.context = context;
     }
     public long insertUser(String Name, String Email, String Password) {
-        long id = 0;
+        long id = -1;
 
         // Verifica si el correo electrónico ya existe en la tabla UserAuthentication
         if (!isEmailExists(Email)) {

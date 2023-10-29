@@ -53,10 +53,13 @@ public class RegisterActivity extends AppCompatActivity {
                     long id = dbUsers.insertUser(name, email, password);
 
                     if (id > 0) {
-                        Toast.makeText(RegisterActivity.this, "REGISTRO GUARDADO", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Registro exitoso (ID: " + id + ")", Toast.LENGTH_SHORT).show();
                         limpiar();
+
+                        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                        startActivity(intent);
                     } else {
-                        Toast.makeText(RegisterActivity.this, "ERROR AL GUARDAR", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Error al guardar (ID: " + id + ")", Toast.LENGTH_SHORT).show();
                     }
                 } else {
                     Toast.makeText(RegisterActivity.this, "Por favor, ingresa datos válidos", Toast.LENGTH_SHORT).show();
