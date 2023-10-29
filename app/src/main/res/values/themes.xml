@@ -5,5 +5,28 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+
+    <!-- Estilo para el título -->
+    <style name="TextAppearance.ToDoOkApp.Title" parent="@style/TextAppearance.AppCompat.Large">
+        <item name="android:textSize">@dimen/android_textSizeTitle</item>
+    </style>
+
+    <!-- Estilo para el subtítulo -->
+    <style name="TextAppearance.ToDoOkApp.Subtitle" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/android_textSizeSubtitle</item>
+    </style>
+
+    <!-- Estilo para el texto normal  -->
+    <style name="TextAppearance.ToDoOkApp.normal" parent="@style/TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">@dimen/android_textSizeNormal</item>
+    </style>
+
+=======
     <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp" />
+
+    <style name="MenuStyle">
+        <item name="android:background">@color/colorMenuBackground</item> <!-- Cambia este valor al color de fondo deseado -->
+        <item name="android:textColor">@color/colorMenuText  </item> <!-- Cambia este valor al color de fuente deseado -->
+    </style>
+>>>>>>> dev
 </resources>

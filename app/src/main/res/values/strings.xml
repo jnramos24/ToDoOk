@@ -1,4 +1,6 @@
 <resources>
+    <!--Nombre de app-->
+    <string name="nombre_app">ToDoOkApp</string>
 
     <!--String Register-->
     <string name="register">Registro</string>
@@ -8,19 +10,21 @@
     <string name="text_hint_pass">Contraseña</string>
     <string name="btn_text_crear">Crear cuenta</string>
     <string name="text_iniciar_sesion">¿Ya tienes cuenta? Iniciar sesión.</string>
-
     <string name="app_name">ToDoOkApp</string>
 
+    <!-- Menu -->
+    <string name="menu_options">menu opciones</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_contacto">Contacto</string>
 
     <!--Perfil-->
     <string name="MiPerfil">Mi Perfil</string>
     <string name="NombresDato">Nombre</string>
-    <string name="ApellidoDato">Apellido</string>
     <string name="EmailDato">Email</string>
-    <string name="DirecciónDato">Dirección</string>
-    <string name="TeléfonoDato">Teléfono</string>
-    <string name="Actualizar">Actualizar Datos</string>
-
+    <string name="Contraseña">Contraseña</string>
+    <string name="btnActualizar">Actualizar Datos</string>
+    <string name="btncamara">Cargar Imagen</string>
+    <string name="imagen">Foto de perfil </string>
 
     <string name="todook">ToDoOk</string>
     <string name="btnadd_img">Menu options</string>
@@ -46,15 +50,19 @@
     <string name="recuperar_contraseña">¿Olvidaste tu contraseña? Click Aqui</string>
     <string name="para_registrarse">¿No tenes cuenta?  Registrate</string>
 
+    <!-- Dashboard -->
+    <string name="add_item">agregar nueva tarea</string>
 
-
-
-
-=======
+    =======
 
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
+    <string name="Foto" />
+    <string name="high_priority">Alta</string>
+    <string name="med_priority">Media</string>
+    <string name="low_priority">Baja</string>
+    <string name="add_button">Agregar</string>
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
