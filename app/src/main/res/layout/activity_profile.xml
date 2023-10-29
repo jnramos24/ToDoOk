@@ -92,6 +92,8 @@
         android:layout_marginBottom="84dp"
         android:text="@string/btnActualizar"
         android:textSize="18sp"
+        android:background="@color/buttonColorPrimary"
+        android:textColor="?android:textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +106,8 @@
         android:layout_marginTop="32dp"
         android:text="@string/btncamara"
         android:textSize="18sp"
+        android:background="@color/buttonColorPrimary"
+        android:textColor="?android:textColorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgfoto" />
