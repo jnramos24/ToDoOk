@@ -50,6 +50,8 @@
     <string name="recuperar_contraseña">¿Olvidaste tu contraseña? Click Aqui</string>
     <string name="para_registrarse">¿No tenes cuenta?  Registrate</string>
 
+    <!-- Dashboard -->
+    <string name="add_item">agregar nueva tarea</string>
 
     =======
 
