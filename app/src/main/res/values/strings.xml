@@ -12,6 +12,10 @@
     <string name="text_iniciar_sesion">¿Ya tienes cuenta? Iniciar sesión.</string>
     <string name="app_name">ToDoOkApp</string>
 
+    <!-- Menu -->
+    <string name="menu_options">menu opciones</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_contacto">Contacto</string>
 
     <!--Perfil-->
     <string name="MiPerfil">Mi Perfil</string>

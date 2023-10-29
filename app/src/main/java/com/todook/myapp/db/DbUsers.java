@@ -34,7 +34,7 @@ public class DbUsers extends DbHelper {
     }
     public boolean editUser(int id, String Name, String Email, String Password) {
 
-        boolean correct = false;
+        boolean correct;
 
         DbHelper dbHelper = new DbHelper(context);
         SQLiteDatabase db = dbHelper.getWritableDatabase();
