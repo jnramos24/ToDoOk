@@ -20,7 +20,6 @@
     <string name="btncamara">Cargar Imagen</string>
 
 
-
     <string name="todook">ToDoOk</string>
     <string name="btnadd_img">Menu options</string>
     <string name="tasks_message">Sin tareas</string>
@@ -46,10 +45,7 @@
     <string name="para_registrarse">¿No tenes cuenta?  Registrate</string>
 
 
-
-
-
-=======
+    =======
 
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
