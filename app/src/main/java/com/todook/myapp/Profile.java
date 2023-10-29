@@ -9,6 +9,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.result.ActivityResult;
@@ -32,7 +33,7 @@ public class Profile extends AppCompatActivity {
 
     String rutaImagen;
 
-
+    TextView nombre, email, contraseña;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,9 @@ public class Profile extends AppCompatActivity {
             }
         });
 
+        nombre = findViewById(R.id.Nombre);
+        email = findViewById(R.id.Email);
+        contraseña = findViewById(R.id.Contraseña);
 
         btnActualize = findViewById(R.id.btnActualize);
         btnActualize.setOnClickListener(new View.OnClickListener() {

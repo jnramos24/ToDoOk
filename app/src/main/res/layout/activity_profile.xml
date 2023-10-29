@@ -44,13 +44,13 @@
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/Contraseña"
+        android:text="@string/NombresDato"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btncamara" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -72,13 +72,13 @@
         app:layout_constraintTop_toBottomOf="@+id/btncamara" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/Contraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="152dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/NombresDato"
+        android:text="@string/Contraseña"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
