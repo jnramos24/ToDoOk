@@ -35,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         txtName = findViewById(R.id.editTextUsername_R);
         txtEmail = findViewById(R.id.editTextEmail_R);
         txtPassword = findViewById(R.id.editTextPassword_R);
@@ -69,5 +70,16 @@ public class RegisterActivity extends AppCompatActivity {
         txtName.setText("");
         txtPassword.setText("");
         txtEmail.setText("");
+    }
+
+    private boolean isValidEmail(String email) {
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+        return email.matches(emailRegex);
+    }
+
+    private boolean isValidPassword(String password) {
+        // La contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula y un número
+        String passwordRegex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$";
+        return password.matches(passwordRegex);
     }
 }

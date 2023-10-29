@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp" />
+
+    <style name="MenuStyle">
+        <item name="android:background">@color/colorMenuBackground</item> <!-- Cambia este valor al color de fondo deseado -->
+        <item name="android:textColor">@color/colorMenuText  </item> <!-- Cambia este valor al color de fuente deseado -->
+    </style>
 </resources>
