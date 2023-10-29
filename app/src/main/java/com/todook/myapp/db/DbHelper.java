@@ -30,6 +30,19 @@ public class DbHelper extends SQLiteOpenHelper {
                 "Email TEXT UNIQUE," +
                 "Password TEXT," +
                 "Role TEXT)");
+        //Tabla Tareas
+        String queryCrearTablaTareas = "CREATE TABLE " + ConstantesBaseDatos.TABLE_TASKS + "(" +
+                ConstantesBaseDatos.TABLE_TASKS_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                ConstantesBaseDatos.TABLE_TASKS_NAME + " TEXT NOT NULL, " +
+                ConstantesBaseDatos.TABLE_TASKS_TASKDATE + " TEXT NOT NULL, " +
+                ConstantesBaseDatos.TABLE_TASKS_TIMEDATE + " TEXT NOT NULL, " +
+                ConstantesBaseDatos.TABLE_TASKS_TYPE + " TEXT NOT NULL, " +
+                "FOREIGN KEY (" + "Id" + ") " +
+                "REFERENCES " + TABLE_USERS + "(" + "Id" + ")" +
+                ")";
+        sqLiteDatabase.execSQL(queryCrearTablaTareas);
+
+
     }
 
     @Override
@@ -37,6 +50,7 @@ public class DbHelper extends SQLiteOpenHelper {
         // Eliminar las tablas existentes y volver a crearlas
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_USERS);
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + TABLE_AUTHENTICATION);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + ConstantesBaseDatos.TABLE_TASKS);
         onCreate(sqLiteDatabase);
     }
 }
