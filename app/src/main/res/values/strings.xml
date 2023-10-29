@@ -50,6 +50,8 @@
     <string name="recuperar_contraseña">¿Olvidaste tu contraseña? Click Aqui</string>
     <string name="para_registrarse">¿No tenes cuenta?  Registrate</string>
 
+    <!-- Dashboard -->
+    <string name="add_item">agregar nueva tarea</string>
 
     =======
 
@@ -57,6 +59,10 @@
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
     <string name="Foto" />
+    <string name="high_priority">Alta</string>
+    <string name="med_priority">Media</string>
+    <string name="low_priority">Baja</string>
+    <string name="add_button">Agregar</string>
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
