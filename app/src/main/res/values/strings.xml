@@ -53,16 +53,19 @@
     <!-- Dashboard -->
     <string name="add_item">agregar nueva tarea</string>
 
+    <!-- Agregar nueva tarea -->
+    <string name="high_priority">Alta</string>
+    <string name="med_priority">Media</string>
+    <string name="low_priority">Baja</string>
+    <string name="add_button">Agregar</string>
+
     =======
 
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
     <string name="Foto" />
-    <string name="high_priority">Alta</string>
-    <string name="med_priority">Media</string>
-    <string name="low_priority">Baja</string>
-    <string name="add_button">Agregar</string>
+
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 
