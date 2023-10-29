@@ -15,6 +15,7 @@
     <!-- Menu -->
     <string name="menu_options">menu opciones</string>
     <string name="menu_perfil">Perfil</string>
+    <string name="menu_tema">Tema Oscuro</string>
     <string name="menu_contacto">Contacto</string>
 
     <!--Perfil-->
