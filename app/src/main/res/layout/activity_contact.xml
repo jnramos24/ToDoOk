@@ -24,7 +24,8 @@
             app:layout_constraintEnd_toStartOf="@+id/appTitle"
             app:layout_constraintStart_toStartOf="parent"
             android:src="@drawable/baseline_arrow_back_24"
-            tools:layout_editor_absoluteY="20dp" />
+            tools:layout_editor_absoluteY="20dp"
+            android:contentDescription="@string/back_dashboard" />
 
         <TextView
             android:id="@+id/appTitle"
@@ -40,7 +41,9 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/toolbar"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="RtlCompat" />
+            tools:ignore="RtlCompat"
+            />
+        />
 
 
     </androidx.appcompat.widget.Toolbar>
