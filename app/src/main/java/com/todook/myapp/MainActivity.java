@@ -9,7 +9,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.todook.myapp.modelo.Task;
 
 import java.util.ArrayList;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FloatingActionButton fabButton = findViewById(R.id.fab);
+
         Toolbar toolbar = findViewById(R.id.miActionBar);
         setSupportActionBar(toolbar);
 
@@ -38,23 +42,13 @@ public class MainActivity extends AppCompatActivity {
         inicializarListaTasks();
         inicializarAdaptador();
 
-
-       /* Button btnContact = findViewById(R.id.btn_contact);
-        Button btnPerfil = findViewById(R.id.btn_perfil);
-        btnContact.setOnClickListener(new View.OnClickListener() {
+        fabButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, ContactActivity.class);
-                startActivity(intent);
+                Intent intentnew = new Intent(MainActivity.this, NewTaskActivity.class);
+                startActivity(intentnew);
             }
         });
-        btnPerfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Profile.class);
-                startActivity(intent);
-            }
-        });*/
 
 
     }
