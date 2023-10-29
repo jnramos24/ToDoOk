@@ -32,7 +32,6 @@ public class DbHelper extends SQLiteOpenHelper {
                 "UserID INTEGER," +
                 "Name TEXT NOT NULL," +
                 "Email TEXT NOT NULL," +
-                "Password TEXT UNIQUE NOT NULL," +
                 "FOREIGN KEY(UserID) REFERENCES " + TABLE_AUTHENTICATION + "(ID))");
 
         //Tabla Tareas
