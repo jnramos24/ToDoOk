@@ -1,6 +1,7 @@
 package com.todook.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -93,5 +94,14 @@ public class MainActivity extends AppCompatActivity {
         tasks.add(new Task(5,1,"Tarea 4","01/11/2023","18:00", 1));
         tasks.add(new Task(6,1,"Tarea 6","01/01/2024","10:00", 2));
         tasks.add(new Task(7,1,"Tarea 7","30/12/2023","21:00", 3));
+    }
+    
+    // Funcion para cambio de temas
+    public void setDayNight(int mode) {
+        if (mode == 0) {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
     }
 }

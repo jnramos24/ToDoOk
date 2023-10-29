@@ -23,6 +23,3 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
  - [Información del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior) 
 
 
-
-
-

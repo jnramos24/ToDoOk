@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="gray">#808080</color>
-    <color name="colorPrimary">#3F51B5</color>
+    <!-- Tema Claro -->
+    <color name="backgroundColorPrimary">#FFFFFF</color> <!-- Fondo blanco -->
+    <color name="textColorPrimary">#000000</color> <!-- Texto negro -->
+    <color name="textColorSecondary">#FFFFFF</color> <!-- Texto blanco-->
+    <color name="textColorHint">#685D5D</color> <!-- Texto hint-->
+    <color name="buttonColorPrimary">#0F21C3</color> <!-- Azul oscuro -->
 
-    <color name="colorMenuBackground">#3F51B5</color> <!-- Cambia este valor al color de fondo menu opcione-->
-    <color name="colorMenuText">#FFFFFF</color> <!-- Cambia este valor al color de fuente menu opciones -->
-
+    <!-- Tema Oscuro -->
+    <color name="backgroundColorDark">#000000</color> <!-- Fondo negro -->
+    <color name="textColorDark">#FFFFFF</color> <!-- Texto blanco -->
+    <color name="buttonColorDark">#0C36CF</color> <!-- Azul-->
 </resources>

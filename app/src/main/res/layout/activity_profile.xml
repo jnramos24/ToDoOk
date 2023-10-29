@@ -36,7 +36,7 @@
             android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="@+id/toolbar"
             app:layout_constraintTop_toTopOf="parent"
-            style="@style/TextAppearance.ToDoOkApp.Title"/>
+            style="@style/Base.Theme.ToDoOkApp.Light"/>
 
 
 
@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="52dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="32dp"
         android:text="@string/NombresDato"
         android:textSize="16sp"
@@ -62,7 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="32dp"
         android:text="@string/EmailDato"
         android:textSize="16sp"
@@ -77,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="152dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:text="@string/Contraseña"
         android:textSize="16sp"
@@ -89,9 +91,11 @@
         android:id="@+id/btnActualize"
         android:layout_width="317dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="72dp"
+        android:layout_marginBottom="84dp"
         android:text="@string/btnActualizar"
         android:textSize="18sp"
+        android:background="@color/buttonColorPrimary"
+        android:textColor="?android:textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +108,8 @@
         android:layout_marginTop="32dp"
         android:text="@string/btncamara"
         android:textSize="18sp"
+        android:background="@color/buttonColorPrimary"
+        android:textColor="?android:textColorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgfoto" />
@@ -112,12 +118,11 @@
         android:id="@+id/imgfoto"
         android:layout_width="207dp"
         android:layout_height="213dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/imagen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:contentDescription="@string/imagen" />
-
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

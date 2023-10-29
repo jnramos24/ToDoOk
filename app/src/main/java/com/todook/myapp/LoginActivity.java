@@ -39,9 +39,10 @@ public class LoginActivity extends AppCompatActivity {
                     // Credenciales válidas, redirige a la MainActivity
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                 } else {
                     // Credenciales inválidas, muestra mensaje de error
-                    Toast.makeText(LoginActivity.this, "Credenciales inválidas", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Email y/o contraseña inválido", Toast.LENGTH_SHORT).show();
                 }
             }
         });

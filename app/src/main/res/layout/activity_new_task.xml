@@ -29,7 +29,7 @@
             android:layout_gravity="start"
             android:text="Nueva Tarea"
             android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:textColor="@color/textColorSecondary"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/toolbar"
             app:layout_constraintHorizontal_bias="0.498"
@@ -76,12 +76,13 @@
             android:paddingEnd="7dp" />
 
 
+        <!-- RadioGroup for visible selection of a priority -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Prioridad" />
+            android:text="Prioridad"
+            android:textColor="@color/textColorPrimary" />
 
-        <!-- RadioGroup for visible selection of a priority -->
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="match_parent"
@@ -97,33 +98,35 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:checked="false"
-                android:text="@string/high_priority" />
+                android:text="@string/high_priority"
+                android:textColor="@color/textColorPrimary" />
 
             <RadioButton
                 android:id="@+id/radButton2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/med_priority" />
+                android:text="@string/med_priority"
+                android:textColor="@color/textColorPrimary"/>
 
             <RadioButton
                 android:id="@+id/radButton3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/low_priority" />
+                android:text="@string/low_priority"
+                android:textColor="@color/textColorPrimary"/>
 
         </RadioGroup>
 
         <Button
             android:id="@+id/saveButton"
-            style="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@color/colorPrimary"
+            android:background="@color/buttonColorPrimary"
             android:text="@string/add_button"
-            android:textColor="@android:color/primary_text_dark" />
+            android:textColor="@color/textColorSecondary" />
 
 
     </LinearLayout>

@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/appTitle"
-            style="@style/TextAppearance.ToDoOkApp.Title"
+            style="@style/Base.Theme.ToDoOkApp.Light"
             android:layout_width="170dp"
             android:layout_height="30dp"
             android:layout_gravity="start"
@@ -54,7 +54,7 @@
 
     <TextView
         android:id="@+id/title1"
-        style="@style/TextAppearance.ToDoOkApp.Subtitle"
+        style="@style/Base.Theme.ToDoOkApp.Light"
         android:layout_width="381dp"
         android:layout_height="338dp"
         android:layout_marginStart="16dp"
