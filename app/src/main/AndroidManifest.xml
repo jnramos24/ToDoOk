@@ -43,7 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".ContactActivity"
-            android:exported="false" />
+            android:exported="false" />and
         <activity android:name=".NewTaskActivity"
             android:exported="false">
         </activity>
