@@ -20,7 +20,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         //Tabla UserProfile
         sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_USERS + "(" +
-                "Id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "ID INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "Name TEXT NOT NULL," +
                 "Email TEXT NOT NULL," +
                 "Password TEXT UNIQUE NOT NULL)" );
