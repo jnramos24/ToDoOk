@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,25 +16,20 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTasks"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_below ="@+id/miActionBar"
-        app:layout_constraintTop_toBottomOf="@id/miActionBar"
-        android:padding="@dimen/activity_vertical_margin"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        android:padding="@dimen/activity_vertical_margin" />
+
+
+    <!-- Botón flotante para agregar tarea en la parte inferior derecha -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_item"
+        android:src="@drawable/baseline_add_24"
+        android:layout_gravity="bottom|end"
         />
 
-
-
-
-    <!-- Boton para agregar tarea -->
-    <Button
-        android:id="@+id/circularButton"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_margin="16dp"
-        android:background="@drawable/baseline_add_circle_cian_32"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
