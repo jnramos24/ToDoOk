@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(intent);
                 } else {
                     // Credenciales inválidas, muestra mensaje de error
-                    Toast.makeText(LoginActivity.this, "Credenciales inválidas", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Email y/o contraseña inválido", Toast.LENGTH_SHORT).show();
                 }
             }
         });
