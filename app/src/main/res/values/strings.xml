@@ -27,6 +27,9 @@
     <string name="btncamara">Cargar Imagen</string>
     <string name="imagen">Foto de perfil </string>
 
+    <!--Modificar Perfil-->
+
+    <!--Tareas-->
     <string name="todook">ToDoOk</string>
     <string name="btnadd_img">Menu options</string>
     <string name="tasks_message">Sin tareas</string>
