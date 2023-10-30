@@ -43,7 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".ContactActivity"
-            android:exported="false" />and
+            android:exported="false" />
         <activity android:name=".NewTaskActivity"
             android:exported="false">
         </activity>
@@ -52,11 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            android:exported="false">
         </activity>
     </application>
 
