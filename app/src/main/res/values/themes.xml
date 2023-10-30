@@ -4,7 +4,9 @@
         <item name="android:windowBackground">@color/backgroundColorPrimary</item> <!-- Fondo blanco -->
         <item name="android:textColor">@color/textColorPrimary</item> <!-- Texto negro -->
         <item name="android:textColorSecondary">@color/textColorSecondary</item> <!-- Texto blanco -->
-        <item name="colorPrimary">@color/buttonColorPrimary</item> <!-- Botones azul-->
+        <item name="colorPrimary">@color/buttonColorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- Botones azul-->
     </style>
 
     <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp.Light" />

@@ -3,7 +3,9 @@
     <style name="Base.Theme.ToDoOkApp.Dark" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="android:windowBackground">@color/backgroundColorDark</item> <!-- Fondo negro -->
         <item name="android:textColor">@color/textColorDark</item> <!-- Texto blanco -->
-        <item name="colorPrimary">@color/buttonColorDark</item> <!-- Botones azules -->
+        <item name="colorPrimary">@color/buttonColorDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- Botones azules -->
     </style>
 
     <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp.Dark" />
