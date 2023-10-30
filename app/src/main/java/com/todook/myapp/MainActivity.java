@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,33 +29,41 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        FloatingActionButton fabButton = findViewById(R.id.fab);
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
 
-        Toolbar toolbar = findViewById(R.id.miActionBar);
-        setSupportActionBar(toolbar);
+        if (!isLoggedIn) {
+            // Si el usuario no ha iniciado sesión, redirigir a LoginActivity
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        } else {
+            // Usuario ha iniciado sesión correctamente, permitir acceso a MainActivity
 
-        rvTasks =  findViewById(R.id.rvTasks);
+            setContentView(R.layout.activity_main);
 
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
+            FloatingActionButton fabButton = findViewById(R.id.fab);
+            Toolbar toolbar = findViewById(R.id.miActionBar);
+            setSupportActionBar(toolbar);
 
-        rvTasks.setLayoutManager(llm);
-        inicializarListaTasks();
-        inicializarAdaptador();
+            rvTasks = findViewById(R.id.rvTasks);
 
-        fabButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentnew = new Intent(MainActivity.this, NewTaskActivity.class);
-                startActivity(intentnew);
-            }
-        });
+            LinearLayoutManager llm = new LinearLayoutManager(this);
+            llm.setOrientation(LinearLayoutManager.VERTICAL);
 
+            rvTasks.setLayoutManager(llm);
+            inicializarListaTasks();
+            inicializarAdaptador();
 
-
-
+            fabButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intentnew = new Intent(MainActivity.this, NewTaskActivity.class);
+                    startActivity(intentnew);
+                }
+            });
+        }
     }
 
     @Override
