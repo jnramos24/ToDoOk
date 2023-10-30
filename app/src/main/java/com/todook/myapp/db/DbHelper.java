@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 3;
     public static final String DATABASE_NAME = "toDoOk.db";
     public static final String TABLE_USERS = "UserProfile";
     public static final String TABLE_AUTHENTICATION = "UserAuthentication";
