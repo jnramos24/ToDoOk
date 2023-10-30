@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ToDoOkApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+    <style name="Base.Theme.ToDoOkApp.Dark" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:windowBackground">@color/backgroundColorDark</item> <!-- Fondo negro -->
+        <item name="android:textColor">@color/textColorDark</item> <!-- Texto blanco -->
+        <item name="colorPrimary">@color/buttonColorDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- Botones azules -->
     </style>
+
+    <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp.Dark" />
 </resources>

@@ -15,6 +15,7 @@
     <!-- Menu -->
     <string name="menu_options">menu opciones</string>
     <string name="menu_perfil">Perfil</string>
+    <string name="menu_tema">Tema Oscuro</string>
     <string name="menu_contacto">Contacto</string>
 
     <!--Perfil-->
@@ -26,6 +27,12 @@
     <string name="btncamara">Cargar Imagen</string>
     <string name="imagen">Foto de perfil </string>
 
+    <!--Modificar Perfil-->
+    <string name="NombreModificado">Nombre</string>
+    <string name="EmailModificado">Email</string>
+    <string name="ContraseñaModificada">Contraseña</string>
+
+    <!--Tareas-->
     <string name="todook">ToDoOk</string>
     <string name="btnadd_img">Menu options</string>
     <string name="tasks_message">Sin tareas</string>
@@ -53,16 +60,19 @@
     <!-- Dashboard -->
     <string name="add_item">agregar nueva tarea</string>
 
+    <!-- Agregar nueva tarea -->
+    <string name="high_priority">Alta</string>
+    <string name="med_priority">Media</string>
+    <string name="low_priority">Baja</string>
+    <string name="add_button">Agregar</string>
+
     =======
 
     <string name="contacto">Contacto</string>
     <string name="back_dashboard">Retroceder al dashboard</string>
     <string name="new_task">Mi Perfil</string>
     <string name="Foto" />
-    <string name="high_priority">Alta</string>
-    <string name="med_priority">Media</string>
-    <string name="low_priority">Baja</string>
-    <string name="add_button">Agregar</string>
+
     >>>>>>> 698f5183aa8c131a4b0f8e901679a504bf7fe100
 
 

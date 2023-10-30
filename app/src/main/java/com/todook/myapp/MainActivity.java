@@ -1,11 +1,13 @@
 package com.todook.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -27,33 +29,41 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        FloatingActionButton fabButton = findViewById(R.id.fab);
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        boolean isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false);
 
-        Toolbar toolbar = findViewById(R.id.miActionBar);
-        setSupportActionBar(toolbar);
+        if (!isLoggedIn) {
+            // Si el usuario no ha iniciado sesión, redirigir a LoginActivity
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            finish();
+        } else {
+            // Usuario ha iniciado sesión correctamente, permitir acceso a MainActivity
 
-        rvTasks =  findViewById(R.id.rvTasks);
+            setContentView(R.layout.activity_main);
 
-        LinearLayoutManager llm = new LinearLayoutManager(this);
-        llm.setOrientation(LinearLayoutManager.VERTICAL);
+            FloatingActionButton fabButton = findViewById(R.id.fab);
+            Toolbar toolbar = findViewById(R.id.miActionBar);
+            setSupportActionBar(toolbar);
 
-        rvTasks.setLayoutManager(llm);
-        inicializarListaTasks();
-        inicializarAdaptador();
+            rvTasks = findViewById(R.id.rvTasks);
 
-        fabButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intentnew = new Intent(MainActivity.this, NewTaskActivity.class);
-                startActivity(intentnew);
-            }
-        });
+            LinearLayoutManager llm = new LinearLayoutManager(this);
+            llm.setOrientation(LinearLayoutManager.VERTICAL);
 
+            rvTasks.setLayoutManager(llm);
+            inicializarListaTasks();
+            inicializarAdaptador();
 
-
-
+            fabButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intentnew = new Intent(MainActivity.this, NewTaskActivity.class);
+                    startActivity(intentnew);
+                }
+            });
+        }
     }
 
     @Override
@@ -93,5 +103,14 @@ public class MainActivity extends AppCompatActivity {
         tasks.add(new Task(5,1,"Tarea 4","01/11/2023","18:00", 1));
         tasks.add(new Task(6,1,"Tarea 6","01/01/2024","10:00", 2));
         tasks.add(new Task(7,1,"Tarea 7","30/12/2023","21:00", 3));
+    }
+    
+    // Funcion para cambio de temas
+    public void setDayNight(int mode) {
+        if (mode == 0) {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        } else {
+            getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        }
     }
 }

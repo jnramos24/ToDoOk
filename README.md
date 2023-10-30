@@ -10,7 +10,7 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
 
  - [Descripción del Proyecto](https://github.com/jnramos24/ToDoOk/wiki#descripci%C3%B3n-del-proyecto)
 
- - [Detalle de Proyecto a realizar](https://github.com/jnramos24/Ispc_Project/wiki/Sprints----Proyecto-Final)
+ - [Detalle del Proyecto a realizar](https://github.com/jnramos24/Ispc_Project/wiki/Sprints----Proyecto-Final)
 
  - [Diseño en Figma App ToDoOk ](https://www.figma.com/file/RoGpldi4F5mQyHkUdaHPF5/ToDoOkAPP?type=design&node-id=0-1&mode=design)
    
@@ -21,8 +21,5 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
  - [Miembros de equipo](https://github.com/jnramos24/Ispc_Project/wiki/Miembros-de-Equipo)
  
  - [Información del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior) 
-
-
-
 
 

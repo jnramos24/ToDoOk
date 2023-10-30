@@ -54,7 +54,6 @@ public class RegisterActivity extends AppCompatActivity {
 
                     if (id > 0) {
                         Toast.makeText(RegisterActivity.this, "Registro exitoso (ID: " + id + ")", Toast.LENGTH_SHORT).show();
-                        limpiar();
 
                         Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                         startActivity(intent);

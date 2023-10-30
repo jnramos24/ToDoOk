@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/mPerfil"
         android:title="@string/menu_perfil"
-        android:orderInCategory="100"
-        >
-    </item>
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/mTema"
+        android:orderInCategory="101"
+        android:title="@string/menu_tema"
+        app:actionLayout="@layout/switch_item" />
+
     <item
         android:id="@+id/mContacto"
         android:title="@string/menu_contacto"
-        android:orderInCategory="101"
+        android:orderInCategory="102"
         >
     </item>
 

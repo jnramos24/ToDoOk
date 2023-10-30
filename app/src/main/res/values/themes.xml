@@ -1,32 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ToDoOkApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.ToDoOkApp.Light" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/backgroundColorPrimary</item> <!-- Fondo blanco -->
+        <item name="android:textColor">@color/textColorPrimary</item> <!-- Texto negro -->
+        <item name="android:textColorSecondary">@color/textColorSecondary</item> <!-- Texto blanco -->
+        <item name="colorPrimary">@color/buttonColorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item><!-- Botones azul-->
     </style>
 
-
-    <!-- Estilo para el título -->
-    <style name="TextAppearance.ToDoOkApp.Title" parent="@style/TextAppearance.AppCompat.Large">
-        <item name="android:textSize">@dimen/android_textSizeTitle</item>
-    </style>
-
-    <!-- Estilo para el subtítulo -->
-    <style name="TextAppearance.ToDoOkApp.Subtitle" parent="@style/TextAppearance.AppCompat.Medium">
-        <item name="android:textSize">@dimen/android_textSizeSubtitle</item>
-    </style>
-
-    <!-- Estilo para el texto normal  -->
-    <style name="TextAppearance.ToDoOkApp.normal" parent="@style/TextAppearance.AppCompat.Medium">
-        <item name="android:textSize">@dimen/android_textSizeNormal</item>
-    </style>
-
-=======
-    <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp" />
-
-    <style name="MenuStyle">
-        <item name="android:background">@color/colorMenuBackground</item> <!-- Cambia este valor al color de fondo deseado -->
-        <item name="android:textColor">@color/colorMenuText  </item> <!-- Cambia este valor al color de fuente deseado -->
-    </style>
->>>>>>> dev
+    <style name="Theme.ToDoOkApp" parent="Base.Theme.ToDoOkApp.Light" />
 </resources>
