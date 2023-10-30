@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
-            android:id="@+id/img_back_c"
+            android:id="@+id/img_back_d"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:layout_constraintEnd_toStartOf="@+id/appTitle"
@@ -27,9 +27,8 @@
             android:id="@+id/appTitle"
             android:layout_width="170dp"
             android:layout_height="30dp"
-            android:layout_gravity=""
-            android:text=""
-            android:textAlignment=""
+            android:text="Modificar Perfil"
+            android:textAlignment="center"
             android:textColor="@color/textColorSecondary"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="@+id/toolbar"
@@ -50,39 +49,40 @@
         app:layout_constraintTop_toBottomOf="@id/toolbar">
 
         <EditText
-            android:id="@+id/edittitle"
+            android:id="@+id/editname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Titulo de tarea"
+            android:hint="@string/NombreModificado"
             android:minHeight="48dp"
             android:paddingStart="7dp"
             android:paddingEnd="7dp" />
 
         <EditText
-            android:id="@+id/editdate"
+            android:id="@+id/editemail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Agregar fecha"
+            android:hint="@string/EmailModificado"
             android:minHeight="48dp"
             android:paddingStart="7dp"
             android:paddingEnd="7dp" />
 
         <EditText
-            android:id="@+id/edittime"
+            android:id="@+id/editpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Agregar hora"
+            android:hint="@string/ContraseñaModificada"
             android:minHeight="48dp"
             android:paddingStart="7dp"
             android:paddingEnd="7dp" />
 
         <Button
-            android:id="@+id/saveButton"
+            android:id="@+id/saveButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@color/buttonColorPrimary"
-            android:text=""
+            android:text="GUARDAR"
+            android:textSize="20sp"
             android:textColor="@color/textColorSecondary" />
 
     </LinearLayout>

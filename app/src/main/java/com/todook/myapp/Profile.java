@@ -68,13 +68,9 @@ public class Profile extends AppCompatActivity {
         btnActualize.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DbHelper DbHelper = new DbHelper(Profile.this);
-                SQLiteDatabase db = DbHelper.getWritableDatabase();
-                if(db != null){
-                        Toast.makeText(Profile.this, "Base de datos Creada", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(Profile.this, "Error al crear Base de datos ", Toast.LENGTH_LONG).show();
-                }
+                Intent intent = new Intent(Profile.this, SetProfileActivity.class);
+                startActivity(intent);
+
             }
         });
     }

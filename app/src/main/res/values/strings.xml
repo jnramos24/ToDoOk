@@ -28,6 +28,9 @@
     <string name="imagen">Foto de perfil </string>
 
     <!--Modificar Perfil-->
+    <string name="NombreModificado">Nombre</string>
+    <string name="EmailModificado">Email</string>
+    <string name="ContraseñaModificada">Contraseña</string>
 
     <!--Tareas-->
     <string name="todook">ToDoOk</string>
