@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lv_datosuser"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile">
@@ -24,20 +24,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:src="@drawable/baseline_arrow_back_24"
-            android:contentDescription="@string/back_dashboard" />
+            android:contentDescription="@string/back_dashboard"
+            android:src="@drawable/baseline_arrow_back_24" />
 
         <TextView
             android:id="@+id/new_title"
+            style="@style/Base.Theme.ToDoOkApp.Light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:text="@string/new_task"
             android:textColor="@android:color/white"
-            android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/Base.Theme.ToDoOkApp.Light"/>
-
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.appcompat.widget.Toolbar>
@@ -48,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="32dp"
         android:text="@string/NombresDato"
         android:textSize="16sp"
@@ -62,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="32dp"
         android:text="@string/EmailDato"
         android:textSize="16sp"
@@ -76,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="180dp"
         android:layout_marginEnd="32dp"
         android:text="@string/Contraseña"
         android:textSize="16sp"
@@ -90,10 +89,10 @@
         android:layout_width="317dp"
         android:layout_height="52dp"
         android:layout_marginBottom="84dp"
-        android:text="@string/btnActualizar"
-        android:textSize="18sp"
         android:background="@color/buttonColorPrimary"
+        android:text="@string/btnActualizar"
         android:textColor="?android:textColorSecondary"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,10 +103,10 @@
         android:layout_width="185dp"
         android:layout_height="54dp"
         android:layout_marginTop="32dp"
-        android:text="@string/btncamara"
-        android:textSize="18sp"
         android:background="@color/buttonColorPrimary"
+        android:text="@string/btncamara"
         android:textColor="?android:textColorSecondary"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgfoto" />
@@ -118,6 +117,16 @@
         android:layout_height="213dp"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <ListView
+        android:id="@+id/lv_datosuser"
+        android:layout_width="364dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="308dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />

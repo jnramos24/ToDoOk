@@ -1,6 +1,7 @@
 package com.todook.myapp.db;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -12,6 +13,9 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "toDoOk.db";
     public static final String TABLE_USERS = "UserProfile";
     public static final String TABLE_AUTHENTICATION = "UserAuthentication";
+
+    public static final String TABLE_USERS_NAME   = "name";
+    public static final String TABLE_USERS_EMAIL     = "email";
 
     public DbHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -56,4 +60,12 @@ public class DbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + ConstantesBaseDatos.TABLE_TASKS);
         onCreate(sqLiteDatabase);
     }
+
+    public Cursor getUser(){
+        String columnas [] = { TABLE_USERS_NAME,TABLE_USERS_EMAIL};
+        Cursor c =this.getReadableDatabase().query(TABLE_USERS, columnas, null, null, null, null, null);
+        return c;
+    }
+
+
 }
