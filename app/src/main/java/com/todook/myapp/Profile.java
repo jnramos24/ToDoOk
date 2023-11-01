@@ -53,7 +53,7 @@ public class Profile extends AppCompatActivity {
 
         lv_datosuser = findViewById(R.id.lv_datosuser);
         showUser();
-        conn = new DbHelper(getApplicationContext(), "toDoOk.db", null, 3);
+        conn = new DbHelper(getApplicationContext());
 
 
 
