@@ -2,7 +2,6 @@ package com.todook.myapp;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
@@ -13,7 +12,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -40,7 +38,7 @@ public class Profile extends AppCompatActivity {
 
     TextView nombre, email, contraseña;
 
-    ListView lv_datosuser;
+    ListView lv_verdatos;
     DbHelper conn;
     List<String> item =null;
 
@@ -51,7 +49,8 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        lv_datosuser = findViewById(R.id.lv_datosuser);
+        lv_verdatos = findViewById(R.id.lv_verdatos);
+
         showUser();
         conn = new DbHelper(getApplicationContext());
 
@@ -131,7 +130,7 @@ public class Profile extends AppCompatActivity {
 
         ArrayAdapter<String> adaptor =
                 new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, item);
-        lv_datosuser.setAdapter(adaptor);
+        lv_verdatos.setAdapter(adaptor);
     }
 
 }
