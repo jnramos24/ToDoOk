@@ -39,13 +39,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
 
         switch (tipo) {
             case 1:
-                taskViewHolder.icon_type_uno.setImageResource(R.drawable.baseline_circle_green_24);
-                break;
-            case 2:
                 taskViewHolder.icon_type_uno.setImageResource(R.drawable.baseline_circle_red_24);
                 break;
-            case 3:
+            case 2:
                 taskViewHolder.icon_type_uno.setImageResource(R.drawable.baseline_circle_yellow_24);
+                break;
+            case 3:
+                taskViewHolder.icon_type_uno.setImageResource(R.drawable.baseline_circle_green_24);
                 break;
             default:
                 break;
@@ -58,7 +58,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
     }
 
     @Override
-    public int getItemCount() {//cantidad de elementos de la lista
+   public int getItemCount() {//cantidad de elementos de la lista
         return tasks.size();
     }
     public static class TaskViewHolder extends RecyclerView.ViewHolder{
