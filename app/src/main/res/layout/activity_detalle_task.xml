@@ -9,7 +9,6 @@
     card_view:cardCornerRadius="@dimen/corner_radius_cardview"
     >
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -45,8 +44,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/baseline_circle_green_24"
-                android:layout_alignParentEnd="true"
-                android:contentDescription="@string/back_dashboard" />
+                android:contentDescription="@string/task_priority" />
 
         </LinearLayout>
 
@@ -56,8 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:orientation="horizontal"
-            android:layout_below="@id/layout1">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/date1"

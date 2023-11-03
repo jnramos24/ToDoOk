@@ -1,10 +1,15 @@
 package com.todook.myapp.db;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import com.todook.myapp.modelo.Task;
+
+import java.util.ArrayList;
 
 public class DbHelper extends SQLiteOpenHelper {
 
@@ -56,4 +61,29 @@ public class DbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + ConstantesBaseDatos.TABLE_TASKS);
         onCreate(sqLiteDatabase);
     }
+
+    public ArrayList<Task> obtenerTodasLasTareas() {
+        ArrayList<Task> tasks = new ArrayList<>();
+
+        String query = "SELECT * FROM " + ConstantesBaseDatos.TABLE_TASKS;
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor registros = db.rawQuery(query, null);
+
+        while (registros.moveToNext()){
+            Task contactoActual = new Task();
+            contactoActual.setId(registros.getInt(0));
+            contactoActual.setTaskname(registros.getString(1));
+            contactoActual.setTaskdate(registros.getString(2));
+            contactoActual.setTimedate(registros.getString(3));
+            contactoActual.setType(registros.getInt(4));
+
+
+           tasks.add(contactoActual);
+        }
+        // Cerrar el Cursor después de usarlo
+        registros.close();
+        db.close();
+        return tasks;
+    }
+
 }
