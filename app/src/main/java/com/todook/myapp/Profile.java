@@ -76,10 +76,6 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        nombre = findViewById(R.id.Nombre);
-        email = findViewById(R.id.Email);
-        contraseña = findViewById(R.id.Contraseña);
-
         btnActualize = findViewById(R.id.btnActualize);
         btnActualize.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -123,7 +119,8 @@ public class Profile extends AppCompatActivity {
             do {
                 Name = c.getString(0);
                 Email = c.getString(1);
-                item.add(Name+"   "+Email);
+                item.add(Name);
+                item.add(Email);
 
             }while(c.moveToNext());
         }
