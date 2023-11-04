@@ -41,22 +41,23 @@
 
     </androidx.appcompat.widget.Toolbar>
 
+
     <ListView
         android:id="@+id/lv_verdatos"
-        android:layout_width="364dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="308dp"
+        android:layout_width="367dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="252dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.661"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
 
     <TextView
         android:id="@+id/Nombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="220dp"
         android:layout_marginEnd="32dp"
         android:text="@string/NombresDato"
         android:textSize="16sp"
@@ -70,7 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="244dp"
         android:layout_marginEnd="32dp"
         android:text="@string/EmailDato"
         android:textSize="16sp"
@@ -84,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="268dp"
         android:layout_marginEnd="32dp"
         android:text="@string/Contraseña"
         android:textSize="16sp"
@@ -111,7 +112,7 @@
         android:id="@+id/btncamara"
         android:layout_width="185dp"
         android:layout_height="54dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:background="@color/buttonColorPrimary"
         android:text="@string/btncamara"
         android:textColor="?android:textColorSecondary"
