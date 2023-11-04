@@ -121,9 +121,9 @@ public class Profile extends AppCompatActivity {
 
         if(c.moveToFirst()){
             do {
-                Name = c.getString(1);
-                Email = c.getString(2);
-                item.add(Name+""+Email);
+                Name = c.getString(0);
+                Email = c.getString(1);
+                item.add(Name+"   "+Email);
 
             }while(c.moveToNext());
         }

@@ -122,8 +122,8 @@
 
     <ImageView
         android:id="@+id/imgfoto"
-        android:layout_width="207dp"
-        android:layout_height="213dp"
+        android:layout_width="196dp"
+        android:layout_height="158dp"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/imagen"
         app:layout_constraintEnd_toEndOf="parent"
