@@ -20,6 +20,8 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
  
  - [Miembros de equipo](https://github.com/jnramos24/Ispc_Project/wiki/Miembros-de-Equipo)
  
- - [Información del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior) 
+ - [Información del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior)
+
+ - [Archivo Zip](https://github.com/jnramos24/ToDoOk/wiki#archivo-zip-de-la-app)
 
 
