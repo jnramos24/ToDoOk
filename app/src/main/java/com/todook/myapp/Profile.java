@@ -119,8 +119,8 @@ public class Profile extends AppCompatActivity {
             do {
                 Name = c.getString(0);
                 Email = c.getString(1);
-                item.add(Name);
-                item.add(Email);
+                item.add("Nombre :  "  +  Name);
+                item.add("Email :  "  +  Email);
 
             }while(c.moveToNext());
         }
