@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +17,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.todook.myapp.db.ConstantesBaseDatos;
+import com.todook.myapp.db.DbHelper;
 import com.todook.myapp.modelo.Task;
 
 import java.util.ArrayList;
@@ -53,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
             llm.setOrientation(LinearLayoutManager.VERTICAL);
 
             rvTasks.setLayoutManager(llm);
-            inicializarListaTasks();
+            //inicializarListaTasks();
+            cargarListaTasks();
             inicializarAdaptador();
 
             fabButton.setOnClickListener(new View.OnClickListener() {
@@ -88,10 +93,17 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     public TaskAdapter adaptador;
     public void inicializarAdaptador(){
         adaptador = new TaskAdapter(tasks, this);
         rvTasks.setAdapter(adaptador);
+    }
+
+    public void cargarListaTasks() {
+        DbHelper dbHelper = new DbHelper(this);
+        tasks = dbHelper.obtenerTodasLasTareas();
     }
 
     public void inicializarListaTasks(){
