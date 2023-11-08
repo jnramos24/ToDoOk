@@ -18,6 +18,9 @@ public class DbHelper extends SQLiteOpenHelper {
     public static final String TABLE_USERS = "UserProfile";
     public static final String TABLE_AUTHENTICATION = "UserAuthentication";
 
+    public static final String TABLE_USERS_NAME   = "name";
+    public static final String TABLE_USERS_EMAIL     = "email";
+
     public DbHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -62,6 +65,14 @@ public class DbHelper extends SQLiteOpenHelper {
         onCreate(sqLiteDatabase);
     }
 
+
+    public Cursor getUser(){
+        String columnas [] = { TABLE_USERS_NAME,TABLE_USERS_EMAIL};
+        Cursor c =this.getReadableDatabase().query(TABLE_USERS, columnas, null, null, null, null, null);
+        return c;
+    }
+
+
     public ArrayList<Task> obtenerTodasLasTareas() {
         ArrayList<Task> tasks = new ArrayList<>();
 
@@ -85,5 +96,6 @@ public class DbHelper extends SQLiteOpenHelper {
         db.close();
         return tasks;
     }
+
 
 }
