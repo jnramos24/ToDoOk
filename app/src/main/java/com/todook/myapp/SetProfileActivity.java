@@ -20,7 +20,7 @@ public class SetProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_set_profile);
 
-        imagback = findViewById(R.id.img_back_d);
+        imagback = findViewById(R.id.img_back_sp);
 
         imagback.setOnClickListener(new View.OnClickListener() {
             @Override
