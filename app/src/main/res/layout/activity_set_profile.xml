@@ -66,15 +66,6 @@
             android:paddingStart="7dp"
             android:paddingEnd="7dp" />
 
-        <EditText
-            android:id="@+id/editpassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/ContraseñaModificada"
-            android:minHeight="48dp"
-            android:paddingStart="7dp"
-            android:paddingEnd="7dp" />
-
         <Button
             android:id="@+id/saveButton2"
             android:layout_width="match_parent"

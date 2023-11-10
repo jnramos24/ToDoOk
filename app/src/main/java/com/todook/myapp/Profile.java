@@ -34,9 +34,11 @@ public class Profile extends AppCompatActivity {
     Button btncamara;
     ImageView imgfoto;
 
+    Button btnEditPassw;
+
     String rutaImagen;
 
-    TextView nombre, email, contraseña;
+    TextView nombre, email;
 
     ListView lv_verdatos;
     DbHelper conn;
@@ -83,6 +85,16 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, SetProfileActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+        btnEditPassw = findViewById(R.id.btnEditPassw);
+
+        btnEditPassw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, SetPasswordActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -44,27 +44,30 @@
 
     <ListView
         android:id="@+id/lv_verdatos"
-        android:layout_width="396dp"
-        android:layout_height="322dp"
-        android:layout_marginTop="252dp"
+        android:layout_width="294dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="296dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.661"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/btnActualize"
-        android:layout_width="317dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width="291dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="132dp"
         android:background="@color/buttonColorPrimary"
         android:text="@string/btnActualizar"
         android:textColor="?android:textColorSecondary"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+
 
     <Button
         android:id="@+id/btncamara"
@@ -81,13 +84,27 @@
 
     <ImageView
         android:id="@+id/imgfoto"
-        android:layout_width="196dp"
-        android:layout_height="158dp"
+        android:layout_width="232dp"
+        android:layout_height="180dp"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/imagen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnEditPassw"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonColorPrimary"
+        android:text="ACTUALIZAR CONTRASEÑA"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualize"
+        app:layout_constraintVertical_bias="0.649" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
