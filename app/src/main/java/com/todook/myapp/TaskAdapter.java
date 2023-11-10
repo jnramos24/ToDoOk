@@ -3,6 +3,7 @@ package com.todook.myapp;
 import android.app.Activity;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -59,6 +60,35 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         taskViewHolder.date1.setText(task.getTaskdate());
         taskViewHolder.time1.setText(task.getTimedate());
         taskViewHolder.title1.setText(task.getTaskname());
+
+        taskViewHolder.cardView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
+            @Override
+            public void onCreateContextMenu(ContextMenu contextMenu, View view, ContextMenu.ContextMenuInfo contextMenuInfo) {
+                // Inflar el menú de contexto desde el archivo XML
+                Activity activity = (Activity) view.getContext();
+                activity.getMenuInflater().inflate(R.menu.menu_contexto, contextMenu);
+
+                // Agregar el listener para el menú de contexto
+                contextMenu.findItem(R.id.menu_delete).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        // Obtener la tarea seleccionada
+                        int clickedPosition = taskViewHolder.getAdapterPosition();
+                        Task selectedTask = tasks.get(clickedPosition);
+                        // Eliminar la tarea de la base de datos utilizando su ID
+                        dbHelper.eliminarTask(selectedTask.getId());
+                        // Eliminar la tarea del RecyclerView
+                        tasks.remove(clickedPosition);
+                        Toast.makeText(activity, "Tarea Eliminada", Toast.LENGTH_SHORT).show();
+
+                        notifyItemRemoved(clickedPosition);// Utiliza notifyItemRemoved en lugar de notifyDataSetChanged
+
+                        return true;
+                    }
+                });
+            }
+        });
+
 
     }
 
