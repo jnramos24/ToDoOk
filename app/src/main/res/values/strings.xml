@@ -67,6 +67,11 @@
     <string name="low_priority">Baja</string>
     <string name="add_button">Agregar</string>
 
+    <!-- Menu contextual eliiminar tareas-->
+    <string name="menu_edit">Editar</string>
+    <string name="menu_delete">Eliminar</string>
+
+
     =======
 
     <string name="contacto">Contacto</string>

@@ -97,5 +97,13 @@ public class DbHelper extends SQLiteOpenHelper {
         return tasks;
     }
 
+    public void eliminarTask(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(ConstantesBaseDatos.TABLE_TASKS, ConstantesBaseDatos.TABLE_TASKS_ID + "=?", new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+
+
 
 }
