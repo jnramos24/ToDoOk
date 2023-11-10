@@ -6,8 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 
 public class SetPasswordActivity extends AppCompatActivity {
+
+    ImageView imgback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,17 @@ public class SetPasswordActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        imgback = findViewById(R.id.img_back_sp);
+        imgback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SetPasswordActivity.this, Profile.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }
