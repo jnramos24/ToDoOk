@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
             llm.setOrientation(LinearLayoutManager.VERTICAL);
 
             rvTasks.setLayoutManager(llm);
-            //inicializarListaTasks();
             cargarListaTasks();
             inicializarAdaptador();
 
@@ -106,16 +105,6 @@ public class MainActivity extends AppCompatActivity {
         tasks = dbHelper.obtenerTodasLasTareas();
     }
 
-    public void inicializarListaTasks(){
-        tasks = new ArrayList<Task>();
-        tasks.add(new Task(1,1,"Tarea 1","12/11/2023","12:00", 1));
-        tasks.add(new Task(2,1,"Tarea 2","10/12/2023","09:00", 1));
-        tasks.add(new Task(3,1,"Tarea 3","05/11/2023","18:00", 2));
-        tasks.add(new Task(4,1,"Tarea 4","25/12/2023","08:00", 3));
-        tasks.add(new Task(5,1,"Tarea 4","01/11/2023","18:00", 1));
-        tasks.add(new Task(6,1,"Tarea 6","01/01/2024","10:00", 2));
-        tasks.add(new Task(7,1,"Tarea 7","30/12/2023","21:00", 3));
-    }
     
     // Funcion para cambio de temas
     public void setDayNight(int mode) {

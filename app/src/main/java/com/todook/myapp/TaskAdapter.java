@@ -17,7 +17,7 @@ import com.todook.myapp.modelo.Task;
 import java.util.ArrayList;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder >{
-    //contruye la lista de contactos
+    //construye la lista de tareas
     ArrayList<Task> tasks;
     Activity activity;
     public TaskAdapter(ArrayList<Task> tasks, Activity activity){
