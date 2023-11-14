@@ -59,7 +59,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
-        android:background="@color/buttonColorPrimary"
+        android:background="@drawable/style_button"
         android:text="@string/iniciar_sesion"
         android:textColor="@color/textColorSecondary"
         android:textSize="18sp"

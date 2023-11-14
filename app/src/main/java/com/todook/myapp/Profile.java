@@ -1,16 +1,17 @@
 package com.todook.myapp;
 
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -22,6 +23,8 @@ import com.todook.myapp.db.DbHelper;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Profile extends AppCompatActivity {
 
@@ -31,14 +34,29 @@ public class Profile extends AppCompatActivity {
     Button btncamara;
     ImageView imgfoto;
 
+    Button btnEditPassw;
+
     String rutaImagen;
 
-    TextView nombre, email, contraseña;
+    TextView nombre, email;
+
+    ListView lv_verdatos;
+    DbHelper conn;
+    List<String> item =null;
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        lv_verdatos = findViewById(R.id.lv_verdatos);
+
+        showUser();
+        conn = new DbHelper(getApplicationContext());
+
+
 
         btncamara = findViewById(R.id.btncamara);
         imgfoto = findViewById(R.id.imgfoto);
@@ -60,10 +78,6 @@ public class Profile extends AppCompatActivity {
             }
         });
 
-        nombre = findViewById(R.id.Nombre);
-        email = findViewById(R.id.Email);
-        contraseña = findViewById(R.id.Contraseña);
-
         btnActualize = findViewById(R.id.btnActualize);
         btnActualize.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +85,16 @@ public class Profile extends AppCompatActivity {
                 Intent intent = new Intent(Profile.this, SetProfileActivity.class);
                 startActivity(intent);
 
+            }
+        });
+
+        btnEditPassw = findViewById(R.id.btnEditPassw);
+
+        btnEditPassw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Profile.this, SetPasswordActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -95,6 +119,27 @@ public class Profile extends AppCompatActivity {
         rutaImagen = imagen.getAbsolutePath();
         return imagen;
 
+    }
+
+    private void showUser() {
+        conn = new DbHelper(this);
+        Cursor c = conn.getUser();
+        item = new ArrayList<String>();
+        String Name = "", Email="";
+
+        if(c.moveToFirst()){
+            do {
+                Name = c.getString(0);
+                Email = c.getString(1);
+                item.add("Nombre :  "  +  Name);
+                item.add("Email :  "  +  Email);
+
+            }while(c.moveToNext());
+        }
+
+        ArrayAdapter<String> adaptor =
+                new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, item);
+        lv_verdatos.setAdapter(adaptor);
     }
 
 }

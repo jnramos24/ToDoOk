@@ -61,10 +61,16 @@
     <string name="add_item">agregar nueva tarea</string>
 
     <!-- Agregar nueva tarea -->
+    <string name="task_priority">Alta</string>
     <string name="high_priority">Alta</string>
     <string name="med_priority">Media</string>
     <string name="low_priority">Baja</string>
     <string name="add_button">Agregar</string>
+
+    <!-- Menu contextual eliiminar tareas-->
+    <string name="menu_edit">Editar</string>
+    <string name="menu_delete">Eliminar</string>
+
 
     =======
 

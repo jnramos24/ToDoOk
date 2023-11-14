@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
-            android:id="@+id/img_back_d"
+            android:id="@+id/img_back_sp"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:layout_constraintEnd_toStartOf="@+id/appTitle"
@@ -62,15 +62,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/EmailModificado"
-            android:minHeight="48dp"
-            android:paddingStart="7dp"
-            android:paddingEnd="7dp" />
-
-        <EditText
-            android:id="@+id/editpassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/ContraseñaModificada"
             android:minHeight="48dp"
             android:paddingStart="7dp"
             android:paddingEnd="7dp" />

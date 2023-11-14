@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +17,8 @@ import android.view.View;
 import android.widget.ImageView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.todook.myapp.db.ConstantesBaseDatos;
+import com.todook.myapp.db.DbHelper;
 import com.todook.myapp.modelo.Task;
 
 import java.util.ArrayList;
@@ -53,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             llm.setOrientation(LinearLayoutManager.VERTICAL);
 
             rvTasks.setLayoutManager(llm);
-            inicializarListaTasks();
+            cargarListaTasks();
             inicializarAdaptador();
 
             fabButton.setOnClickListener(new View.OnClickListener() {
@@ -88,22 +92,19 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+
+
     public TaskAdapter adaptador;
     public void inicializarAdaptador(){
         adaptador = new TaskAdapter(tasks, this);
         rvTasks.setAdapter(adaptador);
     }
 
-    public void inicializarListaTasks(){
-        tasks = new ArrayList<Task>();
-        tasks.add(new Task(1,1,"Tarea 1","12/11/2023","12:00", 1));
-        tasks.add(new Task(2,1,"Tarea 2","10/12/2023","09:00", 1));
-        tasks.add(new Task(3,1,"Tarea 3","05/11/2023","18:00", 2));
-        tasks.add(new Task(4,1,"Tarea 4","25/12/2023","08:00", 3));
-        tasks.add(new Task(5,1,"Tarea 4","01/11/2023","18:00", 1));
-        tasks.add(new Task(6,1,"Tarea 6","01/01/2024","10:00", 2));
-        tasks.add(new Task(7,1,"Tarea 7","30/12/2023","21:00", 3));
+    public void cargarListaTasks() {
+        DbHelper dbHelper = new DbHelper(this);
+        tasks = dbHelper.obtenerTodasLasTareas();
     }
+
     
     // Funcion para cambio de temas
     public void setDayNight(int mode) {

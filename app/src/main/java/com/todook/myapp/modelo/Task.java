@@ -19,6 +19,10 @@ public class Task {
         this.type = type;
     }
 
+    public Task() {
+
+    }
+
     public int getId() {
         return id;
     }

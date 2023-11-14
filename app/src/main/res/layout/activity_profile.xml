@@ -24,103 +24,87 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:src="@drawable/baseline_arrow_back_24"
-            android:contentDescription="@string/back_dashboard" />
+            android:contentDescription="@string/back_dashboard"
+            android:src="@drawable/baseline_arrow_back_24" />
 
         <TextView
             android:id="@+id/new_title"
+            style="@style/Base.Theme.ToDoOkApp.Light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:text="@string/new_task"
             android:textColor="@android:color/white"
-            android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="@+id/toolbar"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/Base.Theme.ToDoOkApp.Light"/>
-
+            app:layout_constraintTop_toTopOf="parent" />
 
 
     </androidx.appcompat.widget.Toolbar>
 
 
-    <TextView
-        android:id="@+id/Nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/NombresDato"
-        android:textSize="16sp"
+    <ListView
+        android:id="@+id/lv_verdatos"
+        android:layout_width="294dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="296dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btncamara" />
-
-    <TextView
-        android:id="@+id/Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/EmailDato"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btncamara" />
-
-    <TextView
-        android:id="@+id/Contraseña"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="152dp"
-        android:layout_marginEnd="32dp"
-        android:text="@string/Contraseña"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btncamara" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <Button
         android:id="@+id/btnActualize"
-        android:layout_width="317dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="84dp"
-        android:text="@string/btnActualizar"
-        android:textSize="18sp"
+        android:layout_width="291dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="132dp"
         android:background="@color/buttonColorPrimary"
+        android:text="@string/btnActualizar"
         android:textColor="?android:textColorSecondary"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+
 
     <Button
         android:id="@+id/btncamara"
         android:layout_width="185dp"
         android:layout_height="54dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/btncamara"
-        android:textSize="18sp"
+        android:layout_marginTop="8dp"
         android:background="@color/buttonColorPrimary"
+        android:text="@string/btncamara"
         android:textColor="?android:textColorSecondary"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgfoto" />
 
     <ImageView
         android:id="@+id/imgfoto"
-        android:layout_width="207dp"
-        android:layout_height="213dp"
+        android:layout_width="232dp"
+        android:layout_height="180dp"
         android:layout_marginTop="12dp"
         android:contentDescription="@string/imagen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnEditPassw"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:background="@color/buttonColorPrimary"
+        android:text="ACTUALIZAR CONTRASEÑA"
+        android:textColor="?android:textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActualize"
+        app:layout_constraintVertical_bias="0.649" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

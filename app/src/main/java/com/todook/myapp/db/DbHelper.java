@@ -1,17 +1,25 @@
 package com.todook.myapp.db;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import com.todook.myapp.modelo.Task;
+
+import java.util.ArrayList;
+
 public class DbHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
     public static final String DATABASE_NAME = "toDoOk.db";
     public static final String TABLE_USERS = "UserProfile";
     public static final String TABLE_AUTHENTICATION = "UserAuthentication";
+
+    public static final String TABLE_USERS_NAME   = "name";
+    public static final String TABLE_USERS_EMAIL     = "email";
 
     public DbHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -56,4 +64,46 @@ public class DbHelper extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + ConstantesBaseDatos.TABLE_TASKS);
         onCreate(sqLiteDatabase);
     }
+
+
+    public Cursor getUser(){
+        String columnas [] = { TABLE_USERS_NAME,TABLE_USERS_EMAIL};
+        Cursor c =this.getReadableDatabase().query(TABLE_USERS, columnas, null, null, null, null, null);
+        return c;
+    }
+
+
+    public ArrayList<Task> obtenerTodasLasTareas() {
+        ArrayList<Task> tasks = new ArrayList<>();
+
+        String query = "SELECT * FROM " + ConstantesBaseDatos.TABLE_TASKS;
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor registros = db.rawQuery(query, null);
+
+        while (registros.moveToNext()){
+            Task contactoActual = new Task();
+            contactoActual.setId(registros.getInt(0));
+            contactoActual.setTaskname(registros.getString(1));
+            contactoActual.setTaskdate(registros.getString(2));
+            contactoActual.setTimedate(registros.getString(3));
+            contactoActual.setType(registros.getInt(4));
+
+
+           tasks.add(contactoActual);
+        }
+        // Cerrar el Cursor después de usarlo
+        registros.close();
+        db.close();
+        return tasks;
+    }
+
+    public void eliminarTask(int id) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(ConstantesBaseDatos.TABLE_TASKS, ConstantesBaseDatos.TABLE_TASKS_ID + "=?", new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+
+
+
 }
