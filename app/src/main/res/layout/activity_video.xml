@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Video">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+    <Button
+        android:id="@+id/btn_iniciavideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="iniciar"
+        android:text="Iniciar reproducción" />
+
+    <Button
+        android:id="@+id/btn_pausarvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pausar Reproducción" />
+
+    <Button
+        android:id="@+id/btn_continuarvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar Reproducción" />
+
+</LinearLayout>

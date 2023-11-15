@@ -59,7 +59,7 @@
         android:layout_height="338dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="108dp"
-        android:drawablePadding="20dp"
+        android:drawablePadding="24dp"
         android:gravity="start"
         android:text="@string/CampoContact"
         android:textAlignment="center"
@@ -69,6 +69,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
         />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="221dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="68dp"
+        android:text="Te invitamos a ver el siguiente Video"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title1" />
+
+    <Button
+        android:id="@+id/btn_irvideo"
+        android:layout_width="189dp"
+        android:layout_height="49dp"
+        android:text="Video"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.153" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
