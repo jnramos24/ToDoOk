@@ -7,11 +7,12 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class Video extends AppCompatActivity {
 
-    VideoView vv1;
+    VideoView videoView;
 
 
     @Override
@@ -19,23 +20,15 @@ public class Video extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
 
-        vv1 = findViewById(R.id.videoView);
+        videoView = findViewById(R.id.videoView);
+
+        Uri uri = Uri.parse("http://techslides.com/demos/sample-videos/small.mp4");
+
+        videoView.setMediaController(new MediaController(this));
+        videoView.setVideoURI(uri);
+        videoView.requestFocus();
+        videoView.start();
 
     }
-
-    public void iniciar (View v) {
-        vv1.setVideoURI(Uri.parse("https://www.youtube.com/watch?v=mf_iy3UGYZE&t=298s"));
-        vv1.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mediaPlayer) {
-                vv1.start();
-            }
-        });
-
-    }
-
-
-
-
 
 }

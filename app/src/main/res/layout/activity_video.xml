@@ -12,23 +12,4 @@
         android:layout_width="match_parent"
         android:layout_height="230dp" />
 
-    <Button
-        android:id="@+id/btn_iniciavideo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="iniciar"
-        android:text="Iniciar reproducción" />
-
-    <Button
-        android:id="@+id/btn_pausarvideo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pausar Reproducción" />
-
-    <Button
-        android:id="@+id/btn_continuarvideo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Continuar Reproducción" />
-
 </LinearLayout>
