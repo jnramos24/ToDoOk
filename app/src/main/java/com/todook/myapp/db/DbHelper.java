@@ -1,5 +1,6 @@
 package com.todook.myapp.db;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -103,6 +104,25 @@ public class DbHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    public void actualizarTarea(int taskId, String editedTitle, String editedFecha, String editedTime, int editedPriority) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+
+        ContentValues values = new ContentValues();
+        values.put(ConstantesBaseDatos.TABLE_TASKS_NAME, editedTitle);
+        values.put(ConstantesBaseDatos.TABLE_TASKS_TASKDATE, editedFecha);
+        values.put(ConstantesBaseDatos.TABLE_TASKS_TIMEDATE, editedTime);
+        values.put(ConstantesBaseDatos.TABLE_TASKS_TYPE, editedPriority);
+
+
+        // Realizar la actualización
+        db.update(ConstantesBaseDatos.TABLE_TASKS, values, ConstantesBaseDatos.TABLE_TASKS_ID + " = ?",
+                new String[]{String.valueOf(taskId)});
+
+
+        // Cerrar la conexión a la base de datos
+        db.close();
+    }
 
 
 

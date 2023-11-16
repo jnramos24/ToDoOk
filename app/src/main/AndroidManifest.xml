@@ -53,6 +53,9 @@
             android:name=".NewTaskActivity"
             android:exported="false"></activity>
         <activity
+            android:name=".TaskEditActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
