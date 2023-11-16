@@ -1,6 +1,7 @@
 package com.todook.myapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -86,8 +87,40 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
                         return true;
                     }
                 });
+
+                contextMenu.findItem(R.id.menu_edit).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem menuItem) {
+                        int clickedPosition = taskViewHolder.getAdapterPosition();
+                        Task selectedTask = tasks.get(clickedPosition);
+
+
+                        // Crear un Intent para la actividad de edición
+                        Intent intent = new Intent(activity, TaskEditActivity.class);
+
+
+                        // Poner datos extras en el Intent
+                        intent.putExtra("taskId", selectedTask.getId());
+                        intent.putExtra("taskName", selectedTask.getTaskname());
+                        intent.putExtra("taskDate", selectedTask.getTaskdate());
+                        intent.putExtra("timeDate", selectedTask.getTimedate());
+                        intent.putExtra("taskType", selectedTask.getType());
+
+
+                        // Iniciar la actividad de edición
+                        activity.startActivity(intent);
+
+
+                        return true;
+                    }
+                });
+
             }
+
+
         });
+
+
 
 
     }
