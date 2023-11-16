@@ -123,5 +123,13 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
         }
 
 
+
+
     }
+
+    public void actualizarTareas(ArrayList<Task> nuevasTareas) {
+        tasks = nuevasTareas;
+        notifyDataSetChanged();
+    }
+
 }
