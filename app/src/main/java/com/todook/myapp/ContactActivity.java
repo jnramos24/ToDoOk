@@ -1,6 +1,5 @@
 package com.todook.myapp;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -32,7 +31,7 @@ public class ContactActivity extends AppCompatActivity {
             }
         });
 
-        imgback = findViewById(R.id.img_back_c);
+        imgback = findViewById(R.id.img_back_v);
         imgback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

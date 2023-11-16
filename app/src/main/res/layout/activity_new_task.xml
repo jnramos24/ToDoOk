@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteX="0dp">
 
         <ImageView
-            android:id="@+id/img_back_c"
+            android:id="@+id/img_back_v"
             android:layout_width="30dp"
             android:layout_height="30dp"
             app:layout_constraintEnd_toStartOf="@+id/appTitle"

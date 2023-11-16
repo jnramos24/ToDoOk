@@ -24,7 +24,7 @@ public class NewTaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_task);
 
-        ImageView img_back = findViewById(R.id.img_back_c);
+        ImageView img_back = findViewById(R.id.img_back_v);
         saveButton = findViewById(R.id.saveButton);
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
