@@ -117,7 +117,7 @@ public class TaskEditActivity extends AppCompatActivity {
                 dbHelper.actualizarTarea(taskId, editedTitle, editedFecha, editedTime, editedPriority);
 
 
-                // Actualiza el RecyclerView (puedes llamar a un método en tu adaptador para notificar cambios)
+                // Actualiza el RecyclerView
                 // Después de actualizar la base de datos
                 ArrayList<Task> nuevasTareas = dbHelper.obtenerTodasLasTareas();
                 if (taskAdapter != null) {
