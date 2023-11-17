@@ -22,6 +22,8 @@ En nuestra [Wiki](https://github.com/jnramos24/ToDoOk/wiki) puede consultar:
  
  - [Información del proyecto anterior](https://github.com/jnramos24/ToDoOk/wiki/Proyecto-anterior)
 
- - [Archivo Zip](https://github.com/jnramos24/ToDoOk/wiki#archivo-zip-de-la-app)
+ - [Archivo Zip primera version](https://github.com/jnramos24/ToDoOk/wiki#archivo-zip-de-la-app)
 
+* Archivo Zip: Ültima versión mejorada se encuentra subida en el repositorio 
+[ToDoOk.zip](https://github.com/jnramos24/ToDoOk/blob/main/ToDoOk.zip)
 
